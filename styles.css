@@ -1,4 +1,231 @@
+/* General rules */
+
 @font-face {
-    font-family: 'GODOFWAR', sans-serif;
+    font-family: 'GODOFWAR';
     src: url(/font/GODOFWAR.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url(/img/bg.png); */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(10, 10, 27);
+    color: white;
+    margin: 0 10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    padding: 1em;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 6vh;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+li:not(:last-child) {
+    margin-right: 20px;
+}
+
+li:hover {
+    text-shadow: 0px 0px 6px white;
+}
+
+.logo {
+    width: 70px;
+    margin-right: 20px;
+}
+
+/* Section de la porte */
+
+.section1 {
+    display: flex;
+    align-items: center;
+}
+
+section { 
+    margin-bottom: 4em;
+}
+
+h1 {
+    font-family: 'GODOFWAR', sans-serif;
+    font-size: 6em;
+    text-shadow: 0px 0px 6px white;
+    margin-bottom: 2rem;
+}
+
+.porte {
+    width: 75%;
+    position: relative;
+}
+
+.porte-img {
+    width: 100%;
+}
+
+.first-text {
+    width: 60%;
+    padding: 20px 0;
+    margin-right: 10px;
+}
+
+.first-text p {
+    color: rgb(110, 110, 141);
+    font-weight: 600;
+    margin-bottom: 4em;
+    line-height: 1.5em;
+}
+
+.button {
+    color: rgb(22, 22, 22);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 1em 6em;
+    background-color: rgb(148, 120, 67);
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.button:hover {
+    color: white;
+    background-color: rgb(22, 22, 22);
+}
+
+/* Animation des rochers flottants */
+
+.floating-rock {
+    position: absolute;
+    width: 5%;
+}
+
+.one {
+    left: 13%;
+    top: 40%;
+    animation: 5s ease-in-out infinite first-anim;
+}
+
+.two {
+    bottom: 13%;
+    right: 15%;
+    animation: 4s ease-in-out 1s infinite second-anim;
+}
+
+@keyframes first-anim {
+    0% {
+        top: 40%;
+    }
+    50% {
+        top: 42%;
+    }
+    100% {
+        top: 40%;
+    }
+}
+
+@keyframes second-anim {
+    0% {
+        bottom: 13%;
+    }
+    50% {
+        bottom: 15%;
+    }
+    100% {
+        bottom: 13%;
+    }
+}
+
+/* Section 2 */
+
+.section2 {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px 2px sandybrown;
+    border-radius: 10px;
+    position: relative;
+    animation: 7s ease-in-out infinite glowing;
+}
+
+.section2 p {
+    color: rgb(110, 110, 141);
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+p.welcome {
+    color: sandybrown;
+}
+
+h2, .welcome {
+    text-transform: uppercase;
+    font-family: "GODOFWAR";
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 4em;
+    margin-bottom: .5em;
+}
+
+.text {
+    padding: 4em;
+    width: 60%;
+    margin-left: 50%;
+}
+
+.left-side-img {
+    width: 50%;
+    position: absolute;
+    bottom: 6%;
+}
+
+.left-side-img img {
+    width: 100%;
+}
+
+/* Animation box shadow */
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px 2px sandybrown;
+    }
+    25% {
+        box-shadow: 0 0 30px 8px sandybrown;
+    }
+    50% {
+        box-shadow: 0 0 10px 2px sandybrown;
+    }
+    75% {
+        box-shadow: 0 0 30px 15px sandybrown;
+    }
+    100% {
+        box-shadow: 0 0 10px 2px sandybrown;
+    }
 }
