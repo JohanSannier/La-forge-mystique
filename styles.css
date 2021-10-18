@@ -377,7 +377,7 @@ p {
 }
 
 .lava {
-    right: 20%;
+    right: 17%;
     top: 3%;
 }
 
@@ -442,3 +442,130 @@ p {
     background: linear-gradient(270deg,rgba(252,176,69,1) 0%, rgba(253,29,29,1) 100%);
 }
 
+/* Media queries */
+
+@media screen and (max-width: 1380px) {
+    .section3-wrapper img {
+    max-width: 33%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1180px) {
+    h1 {
+        font-size: 5em;
+    }
+    .first-text p {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    .title-wrapper h2 {
+        margin-bottom: 1em;
+    }
+    .bullet p {
+        font-size: 1.7em;
+    }
+    .method-wrapper {
+        flex-direction: column;
+    }
+    .cards {
+        width: 70%;
+        margin: 0 auto 2em;
+
+    }
+    .cards img {
+        max-width: 55%;
+        top: 16px;
+        right: 38%;
+}
+    }
+    .bullet, .bullet.right {
+        text-align: center;
+    }
+    .bullet.middle {
+    padding-top: 3em;
+    }
+}
+@media screen and (max-width: 1024px) {
+    p.medium-text {
+        font-size: 1.5em;
+    }    
+    .section3-wrapper img {
+        display: none;
+    }
+    .left-text {
+        margin-right: 1em;
+    }
+}
+@media screen and (max-width: 915px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em  ;
+    }
+    .section1 {
+        flex-direction: column;
+        margin-bottom: 6em;
+    }
+    header, footer, section {
+        margin: initial;
+    }
+    .first-text {
+        width: 80%;
+        margin: 0 2em 2em;
+    }
+    .section2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section3-wrapper p {
+        font-size: 1em;
+        align-items: center;
+    }
+    .upper-left, .upper-right {
+    margin-bottom: 2em;
+    }
+}
+@media (max-width: 850px) {
+    .left-side-img img {
+    display: none;
+    }
+    .text {
+        width: initial;
+        margin-left: initial;
+    }
+}
+@media screen and (max-width:730px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: initial;
+    }    
+    nav ul li {
+        margin-bottom: 1em;
+    }
+}
+@media screen and (max-width:500px) {
+    .text {
+        padding: 1em;
+    }
+    .section3 > div {
+    margin: 0;
+    }
+    .section3-wrapper p {
+        font-size: 0.7em;
+    }
+    .section3 {
+        padding-left: 1em;
+    }
+    .cards {
+        width: 100%;
+    }
+    .button {
+        padding: 1em 5em;
+    }
+    .logo {
+        align-self: center;
+    }
+}
